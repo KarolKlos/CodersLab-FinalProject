@@ -5,7 +5,7 @@ Partal miłośników rzeczy nielegalnych.
 # Technologies: 
 
 - ES6
-- React itd
+- React
 
 # Features:
 
@@ -30,8 +30,7 @@ W trakcie tworzenia
 
 # Instalation:
 
-Opis jak uruchomić projekt pod development
-Collapse
+npm start
 
 
 

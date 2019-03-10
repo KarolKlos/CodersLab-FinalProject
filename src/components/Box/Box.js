@@ -16,9 +16,10 @@ const box = ( props ) => {
 		}, []);
 	if (transformedMarketItems.length === 0) {
 		transformedMarketItems = <p>Grab some guns!</p>;
-	} else {
-		transformedMarketItems = <p>Goooood! Keep buying!</p>
 	}
+	// } else {
+	// 	transformedMarketItems = <p>Goooood! Keep buying!</p>
+	// }
 	return (
 		<div className={classes.Box}>
 			{transformedMarketItems}

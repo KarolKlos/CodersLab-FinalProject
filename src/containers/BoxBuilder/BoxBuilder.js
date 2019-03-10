@@ -57,15 +57,18 @@ class BoxBuilder extends Component {
 	addMarketItemHandler = ( type ) => {
 		const oldCount = this.state.marketItems[type];
 		const updatedCount = oldCount + 1;
-		const updatedmarketItems = {
+		const updatedMarketItems = {
 			...this.state.marketItems
 		};
-		updatedmarketItems[type] = updatedCount;
+		updatedMarketItems[type] = updatedCount;
 		const priceAddition = MARKET_ITEM_PRICES[type];
 		const oldPrice = this.state.totalPrice;
 		const newPrice = oldPrice + priceAddition;
-		this.setState( { totalPrice: newPrice, marketItems: updatedmarketItems } );
-		this.updatePurchaseState( updatedmarketItems );
+		this.setState( { 
+			totalPrice: newPrice, 
+			marketItems: updatedMarketItems,
+		} );
+		this.updatePurchaseState( updatedMarketItems );
 	}
 
 	removeMarketItemHandler = ( type ) => {
@@ -74,15 +77,15 @@ class BoxBuilder extends Component {
 			return;
 		}
 		const updatedCount = oldCount - 1;
-		const updatedmarketItems = {
+		const updatedMarketItems = {
 			...this.state.marketItems
 		};
-		updatedmarketItems[type] = updatedCount;
+		updatedMarketItems[type] = updatedCount;
 		const priceDeduction = MARKET_ITEM_PRICES[type];
 		const oldPrice = this.state.totalPrice;
 		const newPrice = oldPrice - priceDeduction;
-		this.setState( { totalPrice: newPrice, marketItems: updatedmarketItems } );
-		this.updatePurchaseState( updatedmarketItems );
+		this.setState( { totalPrice: newPrice, marketItems: updatedMarketItems } );
+		this.updatePurchaseState( updatedMarketItems );
 	}
 
 	purchaseHandler = () => {

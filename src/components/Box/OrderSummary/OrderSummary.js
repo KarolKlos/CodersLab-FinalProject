@@ -11,10 +11,10 @@ class OrderSummary extends Component {
 
 	render () {
 		const marketItemsSummary = Object.keys( this.props.marketItems )
-			.map( igKey => {
+			.map( itemKey => {
 				return (
-					<li key={igKey}>
-						<span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {this.props.marketItems[igKey]}
+					<li key={itemKey}>
+						<span style={{ textTransform: 'capitalize' }}>{itemKey}</span>: {this.props.marketItems[itemKey]}
 					</li> );
 			} );
 
