@@ -45,8 +45,8 @@ class BoxBuilder extends Component {
 
 	updatePurchaseState ( marketItems ) {
 		const sum = Object.keys( marketItems )
-			.map( igKey => {
-				return marketItems[igKey];
+			.map( itemKey => {
+				return marketItems[itemKey];
 			} )
 			.reduce( ( sum, el ) => {
 				return sum + el;
