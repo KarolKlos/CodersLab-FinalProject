@@ -24,11 +24,11 @@ Partal miłośników rzeczy nielegalnych.
 - Autentyfikacja
 - Sekcja komentarzy
 
-#Status
+# Status
 
 W trakcie tworzenia
 
-#Instalation:
+# Instalation:
 
 Opis jak uruchomić projekt pod development
 Collapse
