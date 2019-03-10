@@ -1,0 +1,41 @@
+.Axe {
+    width: 80%;
+    height: 8%;
+    background: black;
+    margin: 2% auto;
+}
+
+.Alcohol {
+    width: 80%;
+    height: 8%;
+    margin: 2% auto;
+    background: blue;
+}
+
+.Gun {
+    width: 80%;
+    height: 8%;
+    margin: 2% auto;
+    background: green;
+}
+
+.Drugs {
+    width: 80%;
+    height: 8%;
+    background: red;
+    margin: 2% auto;
+}
+
+.HumanOrgans {
+    width: 80%;
+    height: 8%;
+    background: violet;
+    margin: 2%
+}
+
+.Etherum {
+    width: 80%;
+    height: 8%;
+    background: gold;
+    margin: 2%;
+}
